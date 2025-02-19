@@ -1,12 +1,13 @@
+---
+version: null
 meta:
   environment: golang
   toolchain:
     name: go
     version: 1.23.6
 build:
-  image: null
+  image: golang 1.23.6
 run:
-  image: null
+  image: golang 1.23.6
   persistenceMount: /data
-  containerPort: "80"
-  servicePort: "80"
+  containerPort: 80
