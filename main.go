@@ -4,12 +4,9 @@ import (
 	//"fmt"
 	"log"
 	"net/http"
-	"os"
 )
 
 func main() {
-	port := os.Getenv("PORT")
-	port = "3000"
 
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", homePage)
@@ -20,6 +17,6 @@ func main() {
 	mux.Handle("/static/", http.StripPrefix("/static/", fileServer))
 	log.Println("Запуск сервера")
 
-	err := http.ListenAndServe(":"+port, mux)
+	err := http.ListenAndServe(":80", mux)
 	log.Fatal(err)
 }
