@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url("/static/image/nebo1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 120%;
+}
+
+.login {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.nebo {
+  width: 100vw;
+  height: 100vh;
+}
+
+.welcome {
+  color: #8A243E;
+  font-size: 36px;
+}
+
+::placeholder {
+  color: #332c33;
+  font-weight: 400;
+}
+
+form input {
+  padding: 5px 2px;
+  padding-left: 10px;
+  margin-bottom: 8px;
+  width: 350px;
+  height: 43px;
+  outline: none;
+  font-size: 26px;
+  font-weight: 400;
+  border-radius: 5px;
+  border: none;
+}
+
+.form_field {
+  display: grid;
+  margin-top: 5px;
+  color: #000;
+  justify-content: right;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+button[type=submit] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #ffffff;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 57px;
+  outline: none;
+  font-size: 28px;
+  font-family: "Montserrat";
+  border: 0px solid #232138;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -ms-transition: 0.2s ease all;
+  -o-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+  background-color: #BA55D3;
+  border-radius: 20px;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #ffffff;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 57px;
+  outline: none;
+  font-size: 28px;
+  font-family: "Montserrat";
+  border: 0px solid #232138;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -ms-transition: 0.2s ease all;
+  -o-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+  background-color: #BA55D3;
+  border-radius: 20px;
+}
+
+.container_buttons {
+  display: flex;
+  flex-direction: row;
+  width: 330px;
+  justify-content: space-between;
+  margin-top: 25px;
+}/*# sourceMappingURL=style.css.map */
