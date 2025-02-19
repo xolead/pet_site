@@ -7,7 +7,6 @@ import (
 )
 
 func main() {
-
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", homePage)
 	mux.HandleFunc("/info", infoPage)
