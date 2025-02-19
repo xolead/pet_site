@@ -6,9 +6,8 @@ meta:
     name: go
     version: 1.23.6
 build:
-  image: golang 1.23.6
+  image: ""
 run:
-  image: golang 1.23.6
+  image: go run .
   persistenceMount: /data
   containerPort: 80
-  servicePort: 80
