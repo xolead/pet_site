@@ -1,0 +1,12 @@
+meta:
+  environment: golang
+  toolchain:
+    name: go
+    version: 1.23.6
+build:
+  image: null
+run:
+  image: null
+  persistenceMount: /data
+  containerPort: "80"
+  servicePort: "80"
