@@ -1,10 +1,17 @@
 ---
+version: null
 meta:
   environment: docker
-  toolchain: docker
+  toolchain:
+    name: docker
+    version: latest
 build:
-  image: Dockerfile
+  dockerfile: Dockerfile
   skip: false
 run:
+  image: null
+  command: null
+  args: null
   persistenceMount: /data
   containerPort: 80
+  servicePort: 80
