@@ -10,7 +10,7 @@ func main() {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", homePage)
 	mux.HandleFunc("/registration", regPage)
-	mux.HandleFunc("/create", createPage)
+	mux.HandleFunc("/registr", createPage)
 
 	fileServer := http.FileServer(http.Dir("./ui/static/"))
 	mux.Handle("/static/", http.StripPrefix("/static/", fileServer))
