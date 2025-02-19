@@ -45,10 +45,18 @@ func regPage(w http.ResponseWriter, r *http.Request) {
 }
 
 func createPage(w http.ResponseWriter, r *http.Request) {
-	if r.Method != http.MethodPost {
-		w.WriteHeader(405)
-		w.Write([]byte("Get NO"))
+
+	ts, err := template.ParseFiles("ui/html/registration.html")
+	if err != nil {
+		log.Println((err.Error()))
+		http.Error(w, "Internal Server Error", 500)
 		return
 	}
-	w.Write([]byte("LOX"))
+
+	err = ts.Execute(w, nil)
+	if err != nil {
+		log.Println(err.Error())
+		http.Error(w, "Internal Serve Error", 500)
+	}
+
 }
