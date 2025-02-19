@@ -1,13 +1,10 @@
 ---
-version: null
 meta:
-  environment: golang
-  toolchain:
-    name: go
-    version: 1.23.6
+  environment: docker
+  toolchain: docker
 build:
-  image: golang 1.23.6
+  image: Dockerfile
+  skip: false
 run:
-  image: golang 1.23.6
   persistenceMount: /data
   containerPort: 80
