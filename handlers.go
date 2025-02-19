@@ -24,8 +24,8 @@ func homePage(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func infoPage(w http.ResponseWriter, r *http.Request) {
-	ts, err := template.ParseFiles("ui/html/info.html")
+func regPage(w http.ResponseWriter, r *http.Request) {
+	ts, err := template.ParseFiles("ui/html/registration.html")
 	if err != nil {
 		log.Println((err.Error()))
 		http.Error(w, "Internal Server Error", 500)

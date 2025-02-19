@@ -9,7 +9,7 @@ import (
 func main() {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", homePage)
-	mux.HandleFunc("/info", infoPage)
+	mux.HandleFunc("/registration", regPage)
 	mux.HandleFunc("/create", createPage)
 
 	fileServer := http.FileServer(http.Dir("./ui/static/"))
