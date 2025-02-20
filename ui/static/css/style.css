@@ -9,7 +9,7 @@ a {
 body {
   margin: 0;
   padding: 0;
-  background: url("/static/image/nebo1.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/static/image/nebo1.jpg");
   background-repeat: no-repeat;
   background-size: 100% 120%;
 }
@@ -47,8 +47,22 @@ form input {
   outline: none;
   font-size: 26px;
   font-weight: 400;
-  border-radius: 5px;
+  border-radius: 10px;
   border: none;
+}
+
+.cont_strelka_and_input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: -54px;
+}
+
+.strelka_regist {
+  transform: scaleX(-1);
+  width: 45px;
+  height: 35px;
+  margin-top: 3px;
 }
 
 .form_field {
