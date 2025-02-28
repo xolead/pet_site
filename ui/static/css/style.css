@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: "Montserrat";
 }
 
 a {
@@ -38,12 +39,21 @@ body {
   font-weight: 400;
 }
 
+.fake_placeholder {
+  color: #332c33;
+  font-weight: 400;
+  font-size: 24px;
+  position: relative;
+  left: -125px;
+  top: 50px;
+}
+
 form input {
   padding: 5px 2px;
   padding-left: 10px;
   margin-bottom: 8px;
   width: 350px;
-  height: 43px;
+  height: 50px;
   outline: none;
   font-size: 26px;
   font-weight: 400;
@@ -54,20 +64,19 @@ form input {
 .cont_strelka_and_input {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-end;
   margin-left: -54px;
+  flex: 0 1 auto;
 }
 
 .strelka_regist {
-  transform: scaleX(-1);
   width: 45px;
-  height: 35px;
-  margin-top: 3px;
 }
 
 .form_field {
-  display: grid;
-  margin-top: 5px;
+  display: flex;
+  height: 51px;
+  margin-top: 10px;
   color: #000;
   justify-content: right;
 }
@@ -139,4 +148,12 @@ button {
   width: 330px;
   justify-content: space-between;
   margin-top: 25px;
+}
+
+.sign_up_text {
+  position: relative;
+  left: 220px;
+  top: 75px;
+  font-size: 20px;
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */
