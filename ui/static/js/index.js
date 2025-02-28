@@ -9,3 +9,5 @@ window.onload = function() {
     };
     scrollBackground(); // Запускаем анимацию
 };
+
+

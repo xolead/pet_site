@@ -30,22 +30,30 @@
 
             <div class ='welcome'></div>
             <form action="" method="post" class="form">
+                <div class = fake_placeholder>Логин</div>
                     
-                <div class="form_field">
-                    <input type="username" placeholder="Логин" name="username" spellcheck="false"  required >
+                <div class = "cont_strelka_and_input" style="margin-left: 55px;">
+                    
+
+                    <div class="form_field" >
+                        <input type="login"  name="login" spellcheck="false"  required >
+                        
+                    </div>
+
+                    <a href="create">
+                        <img src ='/static/image/registration2.png' class ="strelka_regist" style="margin-left: 10px;">
+                    </a>
+
+                    
                 </div>
     
                 <div class="form_field" >
     
                     <input type="password" placeholder="Пароль" name="password" spellcheck="false" required >
                 </div>
-                <div class = 'container_buttons'>
-                <button type="submit" style ='width: 158px;'>Log in</button>
+                
+                <button type="submit" style ='width: 158px; margin-top: 25px;'>Войти</button>
 
-                <a class ='button' href="/create">
-                <button type ='button'>Sign up</button>
-                </a>
-                </div>
             </form>
         </div>
     </div>    
